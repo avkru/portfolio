@@ -4,7 +4,7 @@ $('#progress-html').circularloader({
   fontSize: '80px', //font size of progress text
   radius: 125, //radius of circle
   progressBarBackground: '#d2d4d8', //background colour of circular progress Bar
-  progressBarColor: '#3498db', //colour of circular progress bar
+  progressBarColor: '#e66240', //colour of circular progress bar
   progressBarWidth: 18, //progress bar width
   progressPercent: 60, //progress percentage out of 100
   progressValue: 0, //diplay this value instead of percentage
@@ -18,7 +18,7 @@ $('#progress-css').circularloader({
   fontSize: '80px',
   radius: 125,
   progressBarBackground: '#d2d4d8',
-  progressBarColor: '#3498db',
+  progressBarColor: '#0070ba',
   progressBarWidth: 18,
   progressPercent: 60,
   progressValue: 0,
@@ -32,7 +32,7 @@ $('#progress-js').circularloader({
   fontSize: '80px',
   radius: 125,
   progressBarBackground: '#d2d4d8',
-  progressBarColor: '#3498db',
+  progressBarColor: '#f7df1e',
   progressBarWidth: 18,
   progressPercent: 20,
   progressValue: 0,
