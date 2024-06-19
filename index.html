@@ -7,11 +7,15 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Александр Кожинов</h1>
-        <p>html-верстальщик</p>
-        <div class="date"></div>
-        <nav>
+      <header class="header">
+        <div class="wrapper">
+          <div class="wrapper-inner">
+            <h1>Александр Кожинов</h1>
+            <p>html-верстальщик</p>
+          </div>
+          <div class="date"></div>
+        </div>
+        <nav class="navigation">
           <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="about.html">Обо мне</a></li>
@@ -35,7 +39,7 @@
             </div>
             <div>
               <span>Email:</span>
-              <span>avk-freelancer</span>
+              <span>avk-freelancer@rambler.ru</span>
             </div>
             <div>
               <span>Telegram:</span>
@@ -57,101 +61,168 @@
             alt="Александр Кожинов"
           />
         </section>
+        <section class="skills">
+          <div class="wrapper">
+            <h2><a href="skills.html">Мои навыки</a></h2>
+            <span>Что я умею ...</span>
+            <div class="line"></div>
+          </div>
+          <div class="skills-container">
+            <div class="skills-item">
+              <div id="progress-html"></div>
+              <p>HTML</p>
+            </div>
+            <div class="skills-item">
+              <div id="progress-css"></div>
+              <p>CSS</p>
+            </div>
+            <div class="skills-item">
+              <div id="progress-js"></div>
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </section>
+        <section class="education">
+          <div class="wrapper">
+            <h2><span>Мое образование</span></h2>
+            <span>Где я учился ...</span>
+            <div class="line"></div>
+          </div>
+          <div class="education-item">
+            <h3>Марийский государственный технический университет</h3>
+            <div class="year"><span>2000-2004</span></div>
+            <p>Экономический факультет, &nbsp;специальность "Финансы и кредит"</p>
+          </div>
+          <div class="education-item">
+            <h3>
+              Онлайн курс "Фронтенд-разработчик" в СберУниверситете (Базовый
+              модуль)</a>
+            </h3>
+            <div class="year"><span>09.2022 - 12.2022</span></div>
+            <p>
+              Сертификат
+              <a
+                href="https://avkru.github.io/certs/index.html#html-css"
+                target="_blank"
+                >Основы HTML и CSS</a
+              >
+            </p>
+            <p>
+              Сертификат
+              <a
+                href="https://avkru.github.io/certs/index.html#js-1"
+                target="_blank"
+                >Основы программирования на JavaScript I</a
+              >
+            </p>
+            <p>
+              Сертификат
+              <a
+                href="https://avkru.github.io/certs/index.html#js-2"
+                target="_blank"
+                >Основы программирования на JavaScript II</a
+              >
+            </p>
+            <p>
+              Сертификат
+              <a
+                href="https://avkru.github.io/certs/index.html#js-3"
+                target="_blank"
+                >Управление веб-страницей с помощью JavaScript</a
+              >
+            </p>
+            <p>
+              Сертификат
+              <a
+                href="https://avkru.github.io/certs/index.html#git"
+                target="_blank"
+                >Инструменты DevOps: Git</a
+              >
+            </p>
+          </div>
+          <div class="education-item">
+            <h3>
+              <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+            </h3>
+            <div class="year"><span>2023-2024</span></div>
+            <p>
+              Онлайн курс "Фронтенд-разработчик" в асинхронном формате (в настоящее время)
+            </p>
+          </div>
+        </section>
+        <section class="portfolio">
+          <div class="wrapper">
+            <h2><a href="portfolio.html">Портфолио</a></h2>
+					  <span>Что я сверстал ...</span>
+					  <div class="line"></div>
+          </div>	
+					<div id="slider" class="scroll-img">
+						<ul>
+              <li>
+                <a href="https://avkru.github.io/sea_cruises/" target="_blank">
+                  <img src="./img/sea-cruises.jpg" alt="Морские круизы">
+                </a>
+              </li>
+              <li>
+                <a href="https://avkru.github.io/green-corp-landing" target="_blank">
+                  <img src="./img/green-corp-landing.jpg" alt="Green Corp">
+                </a>
+              </li>
+              <li>
+                <a href="https://avkru.github.io/bikeshop" target="_blank">
+                  <img src="./img/bikeshop.jpg" alt="Bikeshop">
+                </a>
+              </li>
+              <li>
+                <a href="https://avkru.github.io/veggie" target="_blank">
+                  <img src="./img/veggie.jpg" alt="Veggie">
+                </a>
+              </li>
+							<li>
+								<a href="portfolio/planet-express/index.html" target="_blank">
+									<img src="img/planet-express.jpg" alt="PlanetExpress">
+								</a>
+							</li>
+							<li>
+								<a href="portfolio/modest/index.html" target="_blank">
+									<img src="img/modest.jpg" alt="Modest">
+								</a>
+							</li>
+							<li>
+								<a href="portfolio/modern-look/index.html" target="_blank">
+									<img src="img/modern-look.jpg" alt="Modern Look">
+								</a>
+							</li>
+              <li>
+								<a href="portfolio/csssr/index.html"target="_blank">
+									<img src="img/csssr.jpg" alt="Anketa">
+								</a>
+							</li>
+							<li>
+								<a href="portfolio/brandly/index.html" target="_blank">
+									<img src="img/brandly.jpg" alt="Brandly">
+								</a>
+							</li>
+							<li>
+								<a href="portfolio/ethanol/index.html" target="_blank">
+									<img src="img/ethanol.jpg" alt="Ethanol">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
       </main>
-      <section class="skills">
-        <div class="wrapper">
-          <h2><a href="skills.html">Мои навыки</a></h2>
-          <span>Что я умею ...</span>
-          <div class="line"></div>
-        </div>
-        <div class="skills-container">
-          <div class="skills-item">
-            <div id="progress-html"></div>
-            <p>HTML</p>
-          </div>
-          <div class="skills-item">
-            <div id="progress-css"></div>
-            <p>CSS</p>
-          </div>
-          <div class="skills-item">
-            <div id="progress-js"></div>
-            <p>JavaScript</p>
-          </div>
-        </div>
-      </section>
-      <section class="education">
-        <div class="wrapper">
-          <h2><span>Мое образование</span></h2>
-          <span>Где я учился ...</span>
-          <div class="line"></div>
-        </div>
-        <div class="education-item">
-          <h3>Марийский государственный технический университет</h3>
-          <div class="year"><span>2000-2004</span></div>
-          <p>Экономический факультет, &nbsp;специальность "Финансы и кредит"</p>
-        </div>
-        <div class="education-item">
-          <h3>
-            Онлайн курс "Фронтенд-разработчик" в СберУниверситете (Базовый
-            модуль)</a>
-          </h3>
-          <div class="year"><span>2022</span></div>
-          <p>
-            Сертификат
-            <a
-              href="https://avkru.github.io/certs/index.html#html-css"
-              target="_blank"
-              >Основы HTML и CSS</a
-            >
-          </p>
-          <p>
-            Сертификат
-            <a
-              href="https://avkru.github.io/certs/index.html#js-1"
-              target="_blank"
-              >Основы программирования на JavaScript I</a
-            >
-          </p>
-          <p>
-            Сертификат
-            <a
-              href="https://avkru.github.io/certs/index.html#js-2"
-              target="_blank"
-              >Основы программирования на JavaScript II</a
-            >
-          </p>
-          <p>
-            Сертификат
-            <a
-              href="https://avkru.github.io/certs/index.html#js-3"
-              target="_blank"
-              >Управление веб-страницей с помощью JavaScript</a
-            >
-          </p>
-          <p>
-            Сертификат
-            <a
-              href="https://avkru.github.io/certs/index.html#git"
-              target="_blank"
-              >Инструменты DevOps: Git</a
-            >
-          </p>
-        </div>
-        <div class="education-item">
-          <h3>
-            <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
-          </h3>
-          <div class="year"><span>2023-2024</span></div>
-          <p>
-            Онлайн курс "Фронтенд-разработчик" в асинхронном формате (в настоящее время)
-          </p>
-        </div>
-      </section>
     </div>
     <script src="./js/date.js"></script>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/CircularLoader-v1.2.js"></script>
     <script src="./js/progress.js"></script>
     <script src="./js/jquery.scrollbox.js"></script>
+    <script>
+      $('#slider').scrollbox({
+        direction: 'h',
+        distance: 332
+      });
+  </script>
   </body>
 </html>
