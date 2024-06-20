@@ -319,3 +319,71 @@ section {
   left: 190px;
   font-size: 2.375em;
 }
+
+/* Education */
+
+.education {
+  background: url(../img/bg-dark.png) repeat;
+}
+
+.education-item {
+  margin-bottom: 42px;
+  color: #fff;
+}
+
+.education-item h3 {
+  margin-bottom: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #26303a;
+}
+
+.education-item h3 .year {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-left: 25px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 0 #57819c;
+  text-transform: none;
+  background: #3498db;
+  transform: skewX(-35deg);
+}
+
+.education-item p {
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  text-shadow: 1px 1px 0 #273139;
+}
+
+.education-item p a,
+.education-item h3 a {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.education-item p a:hover,
+.education-item h3 a:hover {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.year span {
+  display: inline-block;
+  transform: skewX(35deg);
+}
+
+.cert:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.education-item:last-child h3 a {
+  margin-left: 0;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
