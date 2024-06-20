@@ -100,7 +100,7 @@ body::before {
 }
 
 .container {
-  min-width: 960px;
+  min-width: 1024px;
   max-width: 1366px;
   min-height: 100%;
   margin: 50px auto;
@@ -279,4 +279,43 @@ section {
 .skype {
   background: url(../img/skype.svg) no-repeat;
   background-size: contain;
+}
+
+/* Skills */
+
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 115px;
+}
+
+/* Input border at focus */
+.clProg:focus {
+  border: 0;
+  outline: 0;
+}
+
+.skills-item p {
+  margin-top: 15px;
+  font-family: 'Lato Regular Eng', sans-serif;
+  font-size: 1.875em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #343a41;
+}
+
+#progress-html,
+#progress-css,
+#progress-js {
+  position: relative;
+}
+
+#progress-html::after,
+#progress-css::after,
+#progress-js::after {
+  content: '%';
+  position: absolute;
+  top: 95px;
+  left: 190px;
+  font-size: 2.375em;
 }
