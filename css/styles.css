@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Ubuntu Rus';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Ubuntu-Rus.woff2') format('woff2'), local('Arial');
+}
+
+@font-face {
+  font-family: 'Ubuntu Eng';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Ubuntu-Eng.woff2') format('woff2'), local('Arial');
+}
+
+@font-face {
+  font-family: 'Ubuntu Italic Rus';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Ubuntu-Italic-Rus.woff2') format('woff2'),
+    local('Arial Italic');
+}
+
+@font-face {
+  font-family: 'Ubuntu Italic Eng';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Ubuntu-Italic-Eng.woff2') format('woff2'),
+    local('Arial Italic');
+}
+
+@font-face {
+  font-family: 'Lato Regular Rus';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Lato-Regular-Rus.woff2') format('woff2'), local('Arial');
+}
+
+@font-face {
+  font-family: 'Lato Regular Eng';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Lato-Regular-Eng.woff2') format('woff2'), local('Arial');
+}
+
+@font-face {
+  font-family: 'Lato Bold Rus';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/Lato-Bold-Rus.woff2') format('woff2'), local('Arial Bold');
+}
+
+@font-face {
+  font-family: 'Lato Bold Eng';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/Lato-Bold-Eng.woff2') format('woff2'), local('Arial Bold');
+}
+
+/* Common styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  font-family: 'Lato Regular Rus', sans-serif;
+  font-size: 16px;
+}
+
+body::before {
+  content: '';
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background: url(../img/matrix.gif) repeat;
+
+  will-change: transform;
+}
+
+.container {
+  min-width: 960px;
+  max-width: 1366px;
+  min-height: 100%;
+  margin: 50px auto;
+
+  background: url(../img/bg-light.png) repeat;
+}
+
+.line {
+  width: 51%;
+  height: 3px;
+  background-color: #2980b9;
+}
+
+section {
+  padding: 54px 0 54px 115px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.wrapper h2 {
+  background-color: #3498db;
+  transform: skewX(-35deg);
+}
+
+.wrapper span {
+  justify-self: start;
+  font-family: 'Ubuntu Italic Rus', sans-serif;
+  font-size: 0.75em;
+  line-height: 1;
+  color: #7f8c8d;
+}
+
+.wrapper h2 span,
+.wrapper h2 a {
+  display: block;
+  padding: 15px;
+  font-family: 'Ubuntu Rus', sans-serif;
+  font-size: 1.6875em;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 0 0 #637e90, 2px 1px 0 #2a4c62;
+  transform: skewX(35deg);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 52px 115px;
+  color: #fff;
+  background: url(../img/bg-dark.png) repeat;
+}
+
+.wrapper-inner h1 {
+  margin-bottom: 10px;
+  font-family: 'Lato Bold Rus', sans-serif;
+  font-size: 2.25em;
+  text-shadow: 1px 0 0 #484c4f, 2px 0 0 #1b2732;
+  text-transform: uppercase;
+}
+
+.wrapper-inner p {
+  font-family: 'Lato Bold Rus', sans-serif;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  color: #3498db;
+  text-shadow: 1px 0 0 #0b1014;
+  text-transform: uppercase;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  list-style: none;
+}
+
+.navigation ul li {
+  background: #3392d3;
+  transform: skewX(-35deg);
+}
+
+.navigation ul li:hover {
+  background-color: #2a7db4;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 21px;
+  font-size: 1.125em;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 2px 1px 0 #2b5c7d;
+  transform: skewX(35deg);
+}
+
+/* Personal */
+
+.personal-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.photo {
+  margin: auto;
+  border: 3px solid #2980b9;
+  border-radius: 50%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.details-item span {
+  font-size: 1.125em;
+  line-height: 1;
+  color: #34495e;
+  text-shadow: 1px 0 0 #939ea9;
+  text-transform: uppercase;
+}
+
+.details-item span:last-child {
+  margin-left: 130px;
+  text-transform: none;
+  text-shadow: -1px 0 0 #a0cfee;
+  color: #3498db;
+}
+
+.details-item:first-child span:last-child {
+  margin-left: 124px;
+}
+
+.details-item:nth-child(3) span:last-child {
+  margin-left: 90px;
+}
+
+.details-item:last-child {
+  gap: 10px;
+  margin: auto;
+}
+
+.email,
+.telegram,
+.skype {
+  width: 40px;
+  height: 40px;
+}
+
+.email {
+  background: url(../img/email.svg) no-repeat;
+  background-size: contain;
+}
+
+.telegram {
+  background: url(../img/tg.svg) no-repeat;
+  background-size: contain;
+}
+
+.skype {
+  background: url(../img/skype.svg) no-repeat;
+  background-size: contain;
+}
