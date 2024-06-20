@@ -361,14 +361,14 @@ section {
 .education-item h3 a {
   display: inline-block;
   margin-left: 10px;
-  text-decoration: underline;
   color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .education-item p a:hover,
 .education-item h3 a:hover {
   color: #3498db;
-  text-decoration: none;
 }
 
 .year span {
