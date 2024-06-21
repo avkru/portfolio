@@ -419,3 +419,18 @@ section {
 #slider img {
   border: 1px solid #3498db;
 }
+
+/* Footer */
+
+footer {
+  background: url(../img/bg-dark.png) repeat;
+}
+
+footer p {
+  padding: 50px 0 50px;
+  font: normal 1.25rem / 1 'Lato Regular Rus';
+  text-shadow: 1px 1px 3px #637e90, -1px 1px 3px #637e90, 1px -1px 3px #637e90,
+    -1px -1px 3px #637e90;
+  text-align: center;
+  color: #fff;
+}
