@@ -387,3 +387,35 @@ section {
 .education-item:last-child {
   margin-bottom: 0;
 }
+
+/* Portfolio */
+
+.portfolio {
+  padding-left: 0;
+}
+
+.portfolio .wrapper {
+  margin-left: 115px;
+}
+
+#slider {
+  width: 956px;
+  height: 243px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#slider.scroll-img ul {
+  width: 1700px;
+  list-style: none;
+}
+
+#slider a {
+  float: left;
+  height: 100%;
+  margin-right: 40px;
+}
+
+#slider img {
+  border: 1px solid #3498db;
+}
