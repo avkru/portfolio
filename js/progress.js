@@ -39,3 +39,31 @@ $('#progress-js').circularloader({
   showText: true,
   title: '',
 });
+
+$('#progress-ps').circularloader({
+  backgroundColor: 'transparent',
+  fontColor: '#000000',
+  fontSize: '80px',
+  radius: 125,
+  progressBarBackground: '#d2d4d8',
+  progressBarColor: '#01c8fe',
+  progressBarWidth: 18,
+  progressPercent: 30,
+  progressValue: 0,
+  showText: true,
+  title: '',
+});
+
+$('#progress-figma').circularloader({
+  backgroundColor: 'transparent',
+  fontColor: '#000000',
+  fontSize: '80px',
+  radius: 125,
+  progressBarBackground: '#d2d4d8',
+  progressBarColor: '#00cf7f',
+  progressBarWidth: 18,
+  progressPercent: 30,
+  progressValue: 0,
+  showText: true,
+  title: '',
+});
