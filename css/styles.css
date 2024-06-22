@@ -495,3 +495,34 @@ footer p {
 .about p:last-child {
   margin-bottom: 0;
 }
+
+/* Page Skills */
+
+.page-skills {
+  padding-left: 0;
+}
+
+.page-skills .wrapper {
+  margin-left: 115px;
+}
+
+.page-skills .skills-item {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 50px;
+  width: 940px;
+}
+
+.page-skills .skills-item:last-child {
+  margin-bottom: 0;
+}
+
+.skills-box + p {
+  margin-left: 40px;
+  font-family: 'Lato Regular Rus', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+  color: #343a41;
+}
