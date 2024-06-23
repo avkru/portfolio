@@ -526,3 +526,36 @@ footer p {
   text-transform: none;
   color: #343a41;
 }
+
+/* Page Portfolio */
+
+.portfolio p {
+  font: normal 1.25rem / 1.7 'Lato Regular Rus';
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 0 0 #939ea9;
+  color: #34495e;
+}
+
+.portfolio p + p {
+  margin-bottom: 50px;
+  text-transform: none;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 634px;
+  margin: auto;
+  gap: 50px;
+  list-style: none;
+}
+
+.portfolio-list img {
+  border: 1px solid #3498db;
+}
+
+.portfolio-list a:hover img {
+  transform: scale(1.2);
+  transition: all 0.4s linear 0.4s;
+}
