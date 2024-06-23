@@ -11,28 +11,11 @@
 }
 
 @font-face {
-  font-family: 'Ubuntu Eng';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/Ubuntu-Eng.woff2') format('woff2'), local('Arial');
-}
-
-@font-face {
   font-family: 'Ubuntu Italic Rus';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
   src: url('../fonts/Ubuntu-Italic-Rus.woff2') format('woff2'),
-    local('Arial Italic');
-}
-
-@font-face {
-  font-family: 'Ubuntu Italic Eng';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/Ubuntu-Italic-Eng.woff2') format('woff2'),
     local('Arial Italic');
 }
 
@@ -58,14 +41,6 @@
   font-weight: 700;
   font-display: swap;
   src: url('../fonts/Lato-Bold-Rus.woff2') format('woff2'), local('Arial Bold');
-}
-
-@font-face {
-  font-family: 'Lato Bold Eng';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/Lato-Bold-Eng.woff2') format('woff2'), local('Arial Bold');
 }
 
 /* Common styles */
@@ -558,4 +533,40 @@ footer p {
 .portfolio-list a:hover img {
   transform: scale(1.2);
   transition: all 0.4s linear 0.4s;
+}
+
+/* Page Contacts */
+
+.contacts {
+  padding-left: 0;
+}
+
+.contacts h2 {
+  margin-bottom: 50px;
+  letter-spacing: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 0 0 #939ea9;
+  color: #34495e;
+}
+
+.contacts .details {
+  width: 398px;
+  margin: auto;
+}
+
+.contacts .details-item {
+  margin-bottom: 50px;
+}
+
+.contacts .details-item:last-child {
+  gap: 30px;
+}
+
+iframe {
+  width: 90%;
+  height: 350px;
+  margin: 0 5% 0;
+
+  border: 1px solid #3498db;
 }
