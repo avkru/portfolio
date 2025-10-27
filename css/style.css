@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+body::before {
+  content: '';
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background: url(../img/matrix.avif) repeat;
+
+  will-change: transform;
+}
+
+.error,
+.description {
+  text-align: center;
+  text-shadow: 0 0 12px #fff;
+  letter-spacing: 4px;
+
+  color: #fff;
+}
+
+.error {
+  margin-bottom: 20px;
+
+  font-size: 110px;
+}
+
+.description {
+  font-size: 64px;
+}
